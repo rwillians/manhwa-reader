@@ -7,13 +7,8 @@
 .library-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 2rem;
-}
-
-.library-header h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .import-btn {
@@ -52,7 +47,7 @@
 }
 
 .manhwa-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(26, 26, 26, 0.1);
 }
 
 .manhwa-card h3 {

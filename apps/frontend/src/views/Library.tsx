@@ -41,7 +41,6 @@ export function Library({ onNavigate }: Props) {
   return (
     <div className="library">
       <header className="library-header">
-        <h1>Manhawa Reader</h1>
         <button onClick={handleImport} className="import-btn">
           Import Manhawa
         </button>
