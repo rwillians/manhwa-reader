@@ -115,26 +115,11 @@ export function Reader({ manhwaId, chapterIdx, onNavigate }: Props) {
   if (!manhwa) return null;
 
   const chapter = manhwa.chapters[chapterIdx];
-  const hasPrev = chapterIdx > 0;
-  const hasNext = chapterIdx < manhwa.chapters.length - 1;
   const isLast = chapterIdx === manhwa.chapters.length - 1;
 
   return (
     <div className="reader" ref={containerRef} onMouseMove={handleMouseMove}>
       <nav className={`reader-nav ${navVisible ? "visible" : ""}`}>
-        <button
-          className="nav-btn"
-          disabled={!hasPrev}
-          onClick={() =>
-            onNavigate({
-              type: "reader",
-              manhwaId,
-              chapterIdx: chapterIdx - 1,
-            })
-          }
-        >
-          &#8592; Prev
-        </button>
         <div className="nav-title">
           <span
             className="manhwa-link"
@@ -145,19 +130,6 @@ export function Reader({ manhwaId, chapterIdx, onNavigate }: Props) {
           <span className="chapter-separator"> &mdash; </span>
           <span>{chapter.name}</span>
         </div>
-        <button
-          className="nav-btn"
-          disabled={!hasNext}
-          onClick={() =>
-            onNavigate({
-              type: "reader",
-              manhwaId,
-              chapterIdx: chapterIdx + 1,
-            })
-          }
-        >
-          Next &#8594;
-        </button>
       </nav>
 
       {loading && <div className="reader-loading">Loading chapter...</div>}
