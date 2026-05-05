@@ -49,7 +49,7 @@ impl Library {
     fn data_path() -> PathBuf {
         let home = dirs::home_dir().expect("Could not find home directory");
         home.join("Documents")
-            .join("Manhawa Reader")
+            .join("Manhwa Reader")
             .join(".data")
             .join("library.json")
     }

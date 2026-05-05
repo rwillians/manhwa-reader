@@ -1,17 +1,17 @@
 {
-  "productName": "Manhawa Reader",
+  "productName": "Manhwa Reader",
   "version": "0.1.0",
-  "identifier": "com.manhawa-reader.desktop",
+  "identifier": "com.manhwa-reader.desktop",
   "build": {
-    "beforeDevCommand": "bun run --filter @manhawa-reader/frontend dev",
+    "beforeDevCommand": "bun run --filter @manhwa-reader/frontend dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "bun run --filter @manhawa-reader/frontend build",
+    "beforeBuildCommand": "bun run --filter @manhwa-reader/frontend build",
     "frontendDist": "../frontend/dist"
   },
   "app": {
     "windows": [
       {
-        "title": "Manhawa Reader",
+        "title": "Manhwa Reader",
         "width": 1024,
         "height": 768,
         "resizable": true,

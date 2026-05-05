@@ -1,4 +1,4 @@
-# Manhawa Reader
+# Manhwa Reader
 
 ## Stack
 
@@ -33,7 +33,7 @@ the React app lives in `apps/frontend/`, the Tauri shell in `apps/backend/`.
 
 ## Data Storage
 
-Library data: `~/Documents/Manhawa Reader/.data/library.json`
+Library data: `~/Documents/Manhwa Reader/.data/library.json`
 
 ## Development
 
@@ -48,7 +48,7 @@ Build output: `apps/backend/target/release/bundle/macos/` and `bundle/dmg/`
 
 Both `dev` and `build` invoke the Tauri CLI with `-c apps/backend/tauri.conf.json`.
 Tauri's `beforeDevCommand`/`beforeBuildCommand` use bun's workspace filter
-(`bun run --filter @manhawa-reader/frontend …`) so they don't depend on the
+(`bun run --filter @Manhwa-reader/frontend …`) so they don't depend on the
 process cwd.
 
 ## Architecture Decisions
@@ -58,7 +58,7 @@ process cwd.
 - **Chapter filename parsing**: `NNN - Name.pdf` or `NNN.pdf` (sort-safe naming assumed)
 - **Confirmation dialogs** are in-app (not native `confirm()`) for dangerous actions (delete, reset progress)
 - **Multi-select** on chapter list: click, shift+click (range), cmd+click (toggle) with bulk action bar
-- **Bundle identifier**: `com.manhawa-reader.desktop` (not `.app` — conflicts with macOS bundle extension)
+- **Bundle identifier**: `com.Manhwa-reader.desktop` (not `.app` — conflicts with macOS bundle extension)
 
 ## Tauri Commands (IPC)
 

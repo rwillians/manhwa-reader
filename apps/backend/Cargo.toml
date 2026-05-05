@@ -1,10 +1,10 @@
 [package]
-name = "manhawa-reader"
+name = "manhwa-reader"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "manhawa_reader_lib"
+name = "manhwa_reader_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]

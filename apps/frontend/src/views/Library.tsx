@@ -42,14 +42,14 @@ export function Library({ onNavigate }: Props) {
     <div className="library">
       <header className="library-header">
         <button onClick={handleImport} className="import-btn">
-          Import Manhawa
+          Import Manhwa
         </button>
       </header>
 
       {manhwas.length === 0 ? (
         <div className="empty-state">
-          <p>No manhawas in your collection yet.</p>
-          <p>Click "Import Manhawa" to add one.</p>
+          <p>No manhwas in your collection yet.</p>
+          <p>Click "Import Manhwa" to add one.</p>
         </div>
       ) : (
         <div className="manhwa-grid">

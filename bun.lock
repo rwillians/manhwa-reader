@@ -3,13 +3,13 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "manhawa-reader",
+      "name": "Manhwa-reader",
       "devDependencies": {
         "@tauri-apps/cli": "^2.0.0",
       },
     },
     "apps/frontend": {
-      "name": "@manhawa-reader/frontend",
+      "name": "@Manhwa-reader/frontend",
       "version": "0.1.0",
       "dependencies": {
         "@tauri-apps/api": "^2.0.0",
@@ -128,7 +128,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
 
-    "@manhawa-reader/frontend": ["@manhawa-reader/frontend@workspace:apps/frontend"],
+    "@Manhwa-reader/frontend": ["@Manhwa-reader/frontend@workspace:apps/frontend"],
 
     "@napi-rs/canvas": ["@napi-rs/canvas@0.1.100", "", { "optionalDependencies": { "@napi-rs/canvas-android-arm64": "0.1.100", "@napi-rs/canvas-darwin-arm64": "0.1.100", "@napi-rs/canvas-darwin-x64": "0.1.100", "@napi-rs/canvas-linux-arm-gnueabihf": "0.1.100", "@napi-rs/canvas-linux-arm64-gnu": "0.1.100", "@napi-rs/canvas-linux-arm64-musl": "0.1.100", "@napi-rs/canvas-linux-riscv64-gnu": "0.1.100", "@napi-rs/canvas-linux-x64-gnu": "0.1.100", "@napi-rs/canvas-linux-x64-musl": "0.1.100", "@napi-rs/canvas-win32-arm64-msvc": "0.1.100", "@napi-rs/canvas-win32-x64-msvc": "0.1.100" } }, "sha512-xglYA6q3XO5P3BNJYxVZ1IV7DLVjp1Py6nwag88YntrS+3vKHyYcMqXVS4ZztJmwz2uGvz1FWhI/4LgbR5uQDA=="],
 

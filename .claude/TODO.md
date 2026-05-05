@@ -1,4 +1,4 @@
-# Manhawa Reader — Initial Setup
+# Manhwa Reader — Initial Setup
 
 ## Project Scaffolding
 - [x] Configuration files (.gitignore, .editorconfig, .tool-versions, CLAUDE.md, README.md)
@@ -16,7 +16,7 @@
 - React 19 + TypeScript + Vite 6
 - Bun 1.3.10 as package manager
 - pdfjs-dist for PDF rendering
-- JSON file storage at ~/Documents/Manhawa Reader/.data/library.json
+- JSON file storage at ~/Documents/Manhwa Reader/.data/library.json
 
 ### Files Created (32 total)
 - **Config**: .gitignore, .editorconfig, .tool-versions, CLAUDE.md, README.md
